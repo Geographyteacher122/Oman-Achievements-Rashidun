@@ -371,6 +371,37 @@ button:not(:disabled):active{transform:translateY(1px) scale(.97)}
 .paused #introScene *,.paused .hwaves *,.paused .hship{animation-play-state:paused!important}
 @media (hover:none){button:not(:disabled):hover{transform:none}.option:not(:disabled):hover{transform:none;box-shadow:none}}
 @media (prefers-reduced-motion:reduce){*,*::before{animation-duration:.01s!important;animation-iteration-count:1!important;transition-duration:.01s!important}}
+/* phone fit: everything on one screen */
+@media (max-width:860px){
+ header{padding:6px 10px 8px!important;border-bottom-width:4px}
+ header .compass,.hcredit,.hwaves,.hship{display:none!important}
+ header h1{font-size:clamp(14px,4.4vw,19px);margin:0;padding:0 40px}
+ header p{font-size:clamp(11px,3.2vw,13px);margin:0}
+ .tools{top:4px}.tools button{width:30px;height:30px;font-size:14px}
+ .progress{margin:0 auto 3px;gap:4px}
+ .dot{width:22px;height:22px;font-size:11px}
+ .hint{display:none}
+ .mapcard{position:relative}
+ .maptools{position:absolute;left:12px;bottom:12px;margin:0;z-index:3;gap:5px}
+ .maptools button{font-size:0;width:32px;height:32px;min-height:0;padding:0;display:grid;place-items:center;background:#fbfef0ee}
+ .maptools .ic{width:18px;height:18px;font-size:18px}
+ .mapscroll{max-height:none;height:100%}
+ .score{margin-bottom:3px;font-size:13px}
+ .question{font-size:clamp(13px,3.7vw,15px);line-height:1.45}
+ .quizcard h2{font-size:14px;margin:2px 0}
+ .option{padding:6px 10px;font-size:clamp(13px,3.6vw,15px);min-height:0}
+ .capwrap{width:42px}
+ .quizcard{overflow:hidden}
+ .modal{padding:10px 12px;width:min(420px,100%);background:#fbfef0d9!important}
+ .fullgirl{height:min(120px,18vh)}
+ .rules{grid-template-columns:repeat(3,1fr)!important;gap:5px}
+ .rule{font-size:10.5px;padding:5px 3px}
+ .rule b{font-size:17px}
+ .modal p{font-size:12.5px;line-height:1.5}
+ .modal h2{font-size:19px}
+ .credit{font-size:12px}
+ #introScene{object-position:center}
+}
 </style>
 </head>
 <body>
