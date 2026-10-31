@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
+<head><script>/* سندباد عُمان الصغير: تسجيل إنهاء اللعبة لمرفأ السفينة */function __sbDone(){var r='';try{r=(location.pathname.split('/')[1]||'').toLowerCase().replace(/\.+$/,'');var c=null;try{c=JSON.parse(localStorage.getItem('sindbad-current')||'null')}catch(e){}var w=(c&&c.name)||'';var d={};try{d=JSON.parse(localStorage.getItem('sindbad-done')||'{}')||{}}catch(e){}(d[w]=d[w]||{})[r]=Date.now();localStorage.setItem('sindbad-done',JSON.stringify(d))}catch(e){}try{if(window.parent&&window.parent!==window)window.parent.postMessage({sindbadDone:r},'*')}catch(e){}}</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>منجزات عُمانية في عصر الخلافة الراشدة</title>
@@ -1008,7 +1008,7 @@ function nextQuestion(){
   if(window.innerWidth<=860)$("quizcard").scrollIntoView({behavior:"smooth",block:"start"});
  }else showResult();
 }
-function showResult(){
+function showResult(){__sbDone();
  const pct=score/MAXSCORE;
  let medal,title,msg,stars;
  if(pct>=.8){medal="trophy";title="مستكشف ذهبي";stars=3;msg="رحلة رائعة! عرفت مُنجَزات العُمانيين في عصر الخلافة الراشدة بإتقان."}
